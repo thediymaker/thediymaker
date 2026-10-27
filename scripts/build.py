@@ -120,13 +120,12 @@ def interests(t, x, y):
     """Pills under the title, coloured like node states."""
     out = []
     # Text widths are pinned with textLength so padding stays even whatever font the viewer has.
-    for label, tw, color in [("HPC", 28, FULL), ("AI", 13, PARTIAL), ("3D printing", 70, IDLE),
-                             ("IoT", 20, DRAINED), ("Tinkering", 60, MAINT)]:
-        w = tw + 40
-        out.append(f'<rect x="{x}" y="{y}" width="{w}" height="28" rx="14" fill="{color}" fill-opacity=".14" '
-                   f'stroke="{color}" stroke-opacity=".55"/>'
-                   f'<circle cx="{x + 15}" cy="{y + 14}" r="4" fill="{color}"/>'
-                   f'<text x="{x + 26}" y="{y + 18.5}" textLength="{tw}" lengthAdjust="spacingAndGlyphs" '
+    for label, tw in [("HPC", 28), ("AI", 13), ("3D printing", 70), ("IoT", 20), ("Tinkering", 60)]:
+        w = tw + 38
+        out.append(f'<rect x="{x}" y="{y}" width="{w}" height="28" rx="5" fill="{t["faint"]}" fill-opacity=".45" '
+                   f'stroke="{t["border"]}"/>'
+                   f'<rect x="{x + 11}" y="{y + 10.5}" width="7" height="7" rx="1.5" fill="{t["muted"]}"/>'
+                   f'<text x="{x + 25}" y="{y + 18.5}" textLength="{tw}" lengthAdjust="spacingAndGlyphs" '
                    f'font-family="{FONT}" font-size="13" font-weight="600" fill="{t["text"]}">{label}</text>')
         x += w + 8
     return "".join(out)
