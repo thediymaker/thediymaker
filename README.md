@@ -61,6 +61,7 @@ from a fleet that serves real traffic. Includes ports for models the released im
 </tr>
 <tr>
 <td colspan="2" valign="top">
+<br>
 <p align="center">
 <img src="https://raw.githubusercontent.com/thediymaker/voron-knomi/main/docs/images/face.png" width="150" alt="KNOMI-NG eyes">
 <img src="https://raw.githubusercontent.com/thediymaker/voron-knomi/main/docs/images/print.png" width="150" alt="Print progress">
