@@ -158,7 +158,7 @@ def banner(theme):
 <text x="40" y="58" font-family="{MONO}" font-size="13" fill="{t["muted"]}" letter-spacing="1">~/thediymaker</text>
 <text x="38" y="112" font-family="{FONT}" font-size="46" font-weight="700" fill="{t["text"]}" letter-spacing="-1">Johnathan Lee</text>
 <text x="40" y="146" font-family="{FONT}" font-size="18" fill="{t["muted"]}">Sr. HPC System Architect · Arizona State University</text>
-<text x="40" y="184" font-family="{FONT}" font-size="15" fill="{t["text"]}">HPC clusters · self-hosted LLM inference · Intel Gaudi · Voron printers</text>
+<text x="40" y="184" font-family="{FONT}" font-size="15" fill="{t["text"]}">HPC · AI · 3D printing</text>
 <line x1="24" y1="{footer_y - 22}" x2="{W - 24}" y2="{footer_y - 22}" stroke="{t["faint"]}"/>
 <circle cx="44" cy="{footer_y - 4}" r="4" fill="#2da44e"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
 <text x="56" y="{footer_y}" font-family="{MONO}" font-size="11" font-weight="700" fill="#2da44e" letter-spacing="1">HEALTHY</text>

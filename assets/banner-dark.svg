@@ -8,7 +8,7 @@
 <text x="40" y="58" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#8b949e" letter-spacing="1">~/thediymaker</text>
 <text x="38" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#e6edf3" letter-spacing="-1">Johnathan Lee</text>
 <text x="40" y="146" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="18" fill="#8b949e">Sr. HPC System Architect · Arizona State University</text>
-<text x="40" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="15" fill="#e6edf3">HPC clusters · self-hosted LLM inference · Intel Gaudi · Voron printers</text>
+<text x="40" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="15" fill="#e6edf3">HPC · AI · 3D printing</text>
 <line x1="24" y1="244" x2="976" y2="244" stroke="#30363d"/>
 <circle cx="44" cy="262" r="4" fill="#2da44e"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
 <text x="56" y="266" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" font-weight="700" fill="#2da44e" letter-spacing="1">HEALTHY</text>
