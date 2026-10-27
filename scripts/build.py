@@ -116,6 +116,22 @@ def static_tile(x, y, w, h, name, fill, pattern=None, icon=""):
             f'{bars}{icon}</g>')
 
 
+def interests(t, x, y):
+    """Pills under the title, coloured like node states."""
+    out = []
+    # Text widths are pinned with textLength so padding stays even whatever font the viewer has.
+    for label, tw, color in [("HPC", 28, FULL), ("AI", 13, PARTIAL), ("3D printing", 70, IDLE),
+                             ("IoT", 20, DRAINED), ("Tinkering", 60, MAINT)]:
+        w = tw + 40
+        out.append(f'<rect x="{x}" y="{y}" width="{w}" height="28" rx="14" fill="{color}" fill-opacity=".14" '
+                   f'stroke="{color}" stroke-opacity=".55"/>'
+                   f'<circle cx="{x + 15}" cy="{y + 14}" r="4" fill="{color}"/>'
+                   f'<text x="{x + 26}" y="{y + 18.5}" textLength="{tw}" lengthAdjust="spacingAndGlyphs" '
+                   f'font-family="{FONT}" font-size="13" font-weight="600" fill="{t["text"]}">{label}</text>')
+        x += w + 8
+    return "".join(out)
+
+
 def banner(theme):
     t = THEMES[theme]
     rng = random.Random(7)
@@ -158,7 +174,7 @@ def banner(theme):
 <text x="40" y="58" font-family="{MONO}" font-size="13" fill="{t["muted"]}" letter-spacing="1">~/thediymaker</text>
 <text x="38" y="112" font-family="{FONT}" font-size="46" font-weight="700" fill="{t["text"]}" letter-spacing="-1">Johnathan Lee</text>
 <text x="40" y="146" font-family="{FONT}" font-size="18" fill="{t["muted"]}">Sr. HPC System Architect · Arizona State University</text>
-<text x="40" y="184" font-family="{FONT}" font-size="15" fill="{t["text"]}">HPC · AI · 3D printing</text>
+{interests(t, 40, 168)}
 <line x1="24" y1="{footer_y - 22}" x2="{W - 24}" y2="{footer_y - 22}" stroke="{t["faint"]}"/>
 <circle cx="44" cy="{footer_y - 4}" r="4" fill="#2da44e"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
 <text x="56" y="{footer_y}" font-family="{MONO}" font-size="11" font-weight="700" fill="#2da44e" letter-spacing="1">HEALTHY</text>
