@@ -9,11 +9,7 @@
   <a href="https://thediymaker.github.io/slides-carcc2026/"><img src="https://img.shields.io/badge/CaRCC%202026%20talk-0d1117?style=flat-square&logoColor=white&logo=googleslides" alt="CaRCC 2026 talk"></a>
 </p>
 
-I build the infrastructure that runs self-hosted AI for a whole university: Slurm and Kubernetes clusters,
-vLLM on Intel Gaudi 2, and the gateway that lets every researcher share the same accelerators fairly.
-Most of the repos here started as a tool I needed at work and couldn't find.
-Off the clock I tune Voron printers and write firmware for the gadgets bolted to them.
-My first repo, back in 2019, was a [Raspberry Pi cluster running Slurm](https://github.com/thediymaker/pi_cluster), and I'm still building clusters.
+I build the infrastructure that runs self-hosted AI for a whole university: Slurm and Kubernetes clusters, vLLM on Intel Gaudi 2, and the gateway that lets every researcher share the same accelerators fairly. Most of the repos here started as a tool I needed at work and couldn't find. Off the clock I tune Voron printers and write firmware for the gadgets bolted to them. My first repo, back in 2019, was a [Raspberry Pi cluster running Slurm](https://github.com/thediymaker/pi_cluster), and I'm still building clusters.
 
 ## What I'm building
 
