@@ -9,17 +9,17 @@
   <a href="https://thediymaker.github.io/slides-carcc2026/"><img src="https://img.shields.io/badge/CaRCC%202026%20talk-0d1117?style=flat-square&logoColor=white&logo=googleslides" alt="CaRCC 2026 talk"></a>
 </p>
 
-I build the infrastructure that runs self-hosted AI for a whole university: Slurm and Kubernetes clusters, vLLM on Intel Gaudi 2, and the gateway that lets every researcher share the same accelerators fairly. Most of the repos here started as a tool I needed at work and couldn't find. Off the clock I tune Voron printers and write firmware for the gadgets bolted to them. My first repo, back in 2019, was a [Raspberry Pi cluster running Slurm](https://github.com/thediymaker/pi_cluster), and I'm still building clusters.
+HPC system architect at Arizona State University Research Computing. I work on Slurm and Kubernetes clusters and self-hosted LLM inference on Intel Gaudi, and build open tools for both. Outside of work: 3D printing, ESP32 and IoT projects, and general tinkering.
 
-## What I'm building
+## Projects
 
 <table>
 <tr>
 <td width="50%" valign="top">
 <a href="https://github.com/thediymaker/slurm-node-dashboard"><img src="https://raw.githubusercontent.com/thediymaker/slurm-node-dashboard/main/images/dashboard1.png" alt="Slurm Node Dashboard"></a>
 <h3><a href="https://github.com/thediymaker/slurm-node-dashboard">Slurm Node Dashboard</a></h3>
-Every node in a Slurm cluster on one screen: state, CPU, memory, GPUs, power, job history and metrics.
-Runs on its own or inside Open OnDemand.<br><br>
+Live node status for Slurm clusters: node states, CPU, memory and GPU use, job history and metrics.
+Runs standalone or inside Open OnDemand.<br><br>
 <a href="https://slurmdash.com"><b>slurmdash.com</b></a> ·
 <img src="https://img.shields.io/github/stars/thediymaker/slurm-node-dashboard?style=flat-square&label=%E2%98%85&color=a3212b" alt="stars">
 <img src="https://img.shields.io/github/v/release/thediymaker/slurm-node-dashboard?style=flat-square&label=&color=30363d" alt="release">
@@ -27,8 +27,8 @@ Runs on its own or inside Open OnDemand.<br><br>
 <td width="50%" valign="top">
 <a href="https://github.com/thediymaker/obleth-gateway"><img src="https://raw.githubusercontent.com/thediymaker/obleth-gateway/main/.github/assets/dashboard.png" alt="obleth gateway"></a>
 <h3><a href="https://github.com/thediymaker/obleth-gateway">obleth gateway</a></h3>
-A multi-tenant AI gateway for shared GPU infrastructure, written in Rust. Weighted fairshare admission per model,
-automatic routing, Slurm-launched models, and cost and energy chargeback, in front of any OpenAI-compatible backend.<br><br>
+An AI gateway for shared GPU clusters, written in Rust. Fairshare scheduling, model routing
+and usage accounting in front of any OpenAI-compatible backend.<br><br>
 <a href="https://obleth.com"><b>obleth.com</b></a> ·
 <img src="https://img.shields.io/github/stars/thediymaker/obleth-gateway?style=flat-square&label=%E2%98%85&color=a3212b" alt="stars">
 <img src="https://img.shields.io/github/v/release/thediymaker/obleth-gateway?style=flat-square&label=&color=30363d" alt="release">
@@ -38,8 +38,8 @@ automatic routing, Slurm-launched models, and cost and energy chargeback, in fro
 <td width="50%" valign="top">
 <a href="https://github.com/thediymaker/obleth-chat"><img src="https://raw.githubusercontent.com/thediymaker/obleth-chat/main/.github/assets/screenshots/workspace-build.png" alt="obleth-chat"></a>
 <h3><a href="https://github.com/thediymaker/obleth-chat">obleth-chat</a></h3>
-A self-hosted chat app for everyone who shares your models. Workspaces that build apps with a live preview,
-document search with citations, and your Slurm and Kubernetes clusters as tools.<br><br>
+A self-hosted chat app for obleth or any OpenAI-compatible API, with document search,
+coding workspaces, and Slurm and Kubernetes tools.<br><br>
 <a href="https://www.obleth.com/docs/chat/introduction"><b>Docs</b></a> ·
 <img src="https://img.shields.io/github/v/release/thediymaker/obleth-chat?style=flat-square&label=&color=30363d" alt="release">
 </td>
@@ -49,8 +49,7 @@ document search with citations, and your Slurm and Kubernetes clusters as tools.
   <img src="assets/gaudi-light.svg" alt="MXFP4 MoE decode on Gaudi 2: up to 2.5x faster">
 </picture></a>
 <h3><a href="https://github.com/thediymaker/gaudi-cookbook">Gaudi Cookbook</a></h3>
-Tested recipes, runtime fixes and custom kernels for serving open LLMs with vLLM on Intel Gaudi 2,
-from a fleet that serves real traffic. Includes ports for models the released images can't run.<br><br>
+Recipes, fixes and kernels for running vLLM on Intel Gaudi 2, tested in production.<br><br>
 <a href="https://thediymaker.github.io/gaudi-cookbook/"><b>Read the cookbook</b></a> ·
 <img src="https://img.shields.io/github/stars/thediymaker/gaudi-cookbook?style=flat-square&label=%E2%98%85&color=a3212b" alt="stars">
 </td>
@@ -66,8 +65,8 @@ from a fleet that serves real traffic. Includes ports for models the released im
 </p>
 <h3 align="center"><a href="https://github.com/thediymaker/voron-knomi">KNOMI-NG</a></h3>
 <p align="center">
-Alternative firmware for the BTT KNOMI V2 toolhead display on Voron printers running Klipper. It has expressive eyes that react to the toolhead,
-print progress, and a touch screen for Box Turtle lanes. Flash it from the browser, no toolchain needed.<br><br>
+Custom firmware for the BTT KNOMI V2 display on Klipper printers: animated eyes, print progress,
+temperatures and Box Turtle lane control. Installs from the browser.<br><br>
 <a href="https://thediymaker.github.io/voron-knomi/"><b>Install from the browser</b></a> ·
 <img src="https://img.shields.io/github/v/release/thediymaker/voron-knomi?style=flat-square&label=&color=30363d" alt="release">
 </p>
@@ -79,10 +78,10 @@ print progress, and a touch screen for Box Turtle lanes. Flash it from the brows
 <summary><b>More tools</b></summary>
 <br>
 
-- [**slurm-history-ingestor**](https://github.com/thediymaker/slurm-history-ingestor): Go service that pulls Slurm job history into PostgreSQL for the dashboard's metrics
-- [**ood-status-iframe**](https://github.com/thediymaker/ood-status-iframe): embeds any dashboard as an Open OnDemand app
-- [**autoresearch-gaudi**](https://github.com/thediymaker/autoresearch-gaudi): Karpathy's autoresearch ported to a single Intel Gaudi 2, with Kubernetes deployment
-- [**slides-carcc2026**](https://github.com/thediymaker/slides-carcc2026): *Running Persistent LLMs for an Entire Campus*, my CaRCC 2026 talk
+- [**slurm-history-ingestor**](https://github.com/thediymaker/slurm-history-ingestor): loads Slurm job history into PostgreSQL for reporting
+- [**ood-status-iframe**](https://github.com/thediymaker/ood-status-iframe): embeds a dashboard as an Open OnDemand app
+- [**autoresearch-gaudi**](https://github.com/thediymaker/autoresearch-gaudi): karpathy/autoresearch ported to Intel Gaudi 2
+- [**slides-carcc2026**](https://github.com/thediymaker/slides-carcc2026): slides from my CaRCC 2026 talk on campus LLM hosting
 
 </details>
 
@@ -105,7 +104,7 @@ print progress, and a touch screen for Box Turtle lanes. Flash it from the brows
 | [obleth-gateway](https://github.com/thediymaker/obleth-gateway) | [`v2.4.0`](https://github.com/thediymaker/obleth-gateway/releases/tag/v2.4.0) | 2026-10-24 |
 <!-- releases:end -->
 
-## Tools I reach for
+## Tools
 
 <p>
 <img src="https://img.shields.io/badge/Rust-0d1117?style=flat-square&logo=rust&logoColor=white" alt="Rust">
