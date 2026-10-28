@@ -97,8 +97,8 @@ temperatures and Box Turtle lane control. Installs from the browser.<br><br>
 <!-- releases:start -->
 | Project | Release | Date |
 |---|---|---|
-| [obleth-chat](https://github.com/thediymaker/obleth-chat) | [`v0.6.0`](https://github.com/thediymaker/obleth-chat/releases/tag/v0.6.0) | 2026-10-27 |
-| [voron-knomi](https://github.com/thediymaker/voron-knomi) | [`v0.3.0`](https://github.com/thediymaker/voron-knomi/releases/tag/v0.3.0) | 2026-10-26 |
+| [obleth-chat](https://github.com/thediymaker/obleth-chat) | [`v0.9.2`](https://github.com/thediymaker/obleth-chat/releases/tag/v0.9.2) | 2026-10-28 |
+| [voron-knomi](https://github.com/thediymaker/voron-knomi) | [`v0.4.0`](https://github.com/thediymaker/voron-knomi/releases/tag/v0.4.0) | 2026-10-27 |
 | [slurm-history-ingestor](https://github.com/thediymaker/slurm-history-ingestor) | [`v1.1.5`](https://github.com/thediymaker/slurm-history-ingestor/releases/tag/v1.1.5) | 2026-10-26 |
 | [slurm-node-dashboard](https://github.com/thediymaker/slurm-node-dashboard) | [`v3.1.0`](https://github.com/thediymaker/slurm-node-dashboard/releases/tag/v3.1.0) | 2026-10-25 |
 | [obleth-gateway](https://github.com/thediymaker/obleth-gateway) | [`v2.4.0`](https://github.com/thediymaker/obleth-gateway/releases/tag/v2.4.0) | 2026-10-24 |
