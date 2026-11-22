@@ -97,7 +97,7 @@ temperatures and Box Turtle lane control. Installs from the browser.<br><br>
 <!-- releases:start -->
 | Project | Release | Date |
 |---|---|---|
-| [obleth-chat](https://github.com/thediymaker/obleth-chat) | [`v1.7.0`](https://github.com/thediymaker/obleth-chat/releases/tag/v1.7.0) | 2026-11-20 |
+| [obleth-chat](https://github.com/thediymaker/obleth-chat) | [`v1.8.0`](https://github.com/thediymaker/obleth-chat/releases/tag/v1.8.0) | 2026-11-21 |
 | [obleth-gateway](https://github.com/thediymaker/obleth-gateway) | [`v2.13.0`](https://github.com/thediymaker/obleth-gateway/releases/tag/v2.13.0) | 2026-11-20 |
 | [voron-knomi](https://github.com/thediymaker/voron-knomi) | [`v0.4.0`](https://github.com/thediymaker/voron-knomi/releases/tag/v0.4.0) | 2026-10-27 |
 | [slurm-history-ingestor](https://github.com/thediymaker/slurm-history-ingestor) | [`v1.1.5`](https://github.com/thediymaker/slurm-history-ingestor/releases/tag/v1.1.5) | 2026-10-26 |
